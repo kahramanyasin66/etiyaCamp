@@ -4,14 +4,14 @@ public class Player extends User {
 	private String firstName;
 	private String lastName;
 	private String identityNumber;
-	private String birthYear;
+	private int birthYear;
 
 	public Player() {
 
 	}
 
 	public Player(int id, String email, String password, String firstName, String lastName, String identityNumber,
-			String birthYear) {
+			int birthYear) {
 		super(id, email, password);
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -39,15 +39,15 @@ public class Player extends User {
 		return identityNumber;
 	}
 
-	public void setIdentityNumberString(String identityNumber) {
+	public void setIdentityNumber(String identityNumber) {
 		this.identityNumber = identityNumber;
 	}
 
-	public String getBirthYear() {
+	public int getBirthYear() {
 		return birthYear;
 	}
 
-	public void setBirthYear(String birthYear) {
+	public void setBirthYear(int birthYear) {
 		this.birthYear = birthYear;
 	}
 
