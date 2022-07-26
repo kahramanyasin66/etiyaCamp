@@ -3,16 +3,16 @@ package kodlamioDbWorkShop;
 public class Address {
 	private int id;
 	private String address;
-	private Customer customerId;
+	private Customer customer;
 
 	public Address() {
 	}
 
-	public Address(int id, String address, Customer customerId) {
+	public Address(int id, String address, Customer customer) {
 		super();
 		this.id = id;
 		this.address = address;
-		this.customerId = customerId;
+		this.customer = customer;
 	}
 
 	public int getId() {
@@ -31,12 +31,12 @@ public class Address {
 		this.address = address;
 	}
 
-	public Customer getCustomerId() {
-		return customerId;
+	public Customer getCustomer() {
+		return customer;
 	}
 
-	public void setCustomerId(Customer customerId) {
-		this.customerId = customerId;
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
 	}
 
 }
